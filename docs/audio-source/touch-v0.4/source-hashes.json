@@ -1,0 +1,22 @@
+[
+  {
+    "file": "cat_release.wav",
+    "duration": 0.085,
+    "sha256": "d07bbd5faf1b82c78d35d195f320875ec81dd56338b690739c158a4e0cede347"
+  },
+  {
+    "file": "land_soft.wav",
+    "duration": 0.145,
+    "sha256": "019bf6c9542dc5a972f58835991252c17395f2ae6f5592cab1d0df318235710a"
+  },
+  {
+    "file": "land_heavy.wav",
+    "duration": 0.19,
+    "sha256": "6e29d3cece838796d4de8dc569827f4ddc7fc192d67a48872883e193781d1a66"
+  },
+  {
+    "file": "cat_bump.wav",
+    "duration": 0.085,
+    "sha256": "d7ccc38b0ff3f7ac7db4f92478bf7e9ac290a734b4dadce9c117c6ffe7eff52e"
+  }
+]

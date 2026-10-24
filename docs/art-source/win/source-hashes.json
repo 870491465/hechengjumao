@@ -1,0 +1,26 @@
+[
+  {
+    "file": "win-title.png",
+    "sha256": "0b158ae85ecea0d67ca4ae8620a88cf2d06a0cadc3c0bdd8924a22d3975eb57a"
+  },
+  {
+    "file": "win-hero.png",
+    "sha256": "3558436f32d6deb132937c7b9df573baf1787052dabcf74b56c44083fb5354f6"
+  },
+  {
+    "file": "win-score-panel.png",
+    "sha256": "46f155591f40e4e597fc73094514bcd3d4cfd201b454ec743c3e9b4f59dcf2b4"
+  },
+  {
+    "file": "win-record-badge.png",
+    "sha256": "1fb131248ea70936a081b2336159ce3437614ba7ee25e0a2bcccbc20f6f9940f"
+  },
+  {
+    "file": "win-celebration.png",
+    "sha256": "0ab96e1862cab10f587cd2a27fc4276b856887124b6fe31707159469b7a929bb"
+  },
+  {
+    "file": "game-background.png",
+    "sha256": "d8aab3e7a85a8eed01e24616f5b148ef5d6855baa2c0cdaa41a4566ae92fb149"
+  }
+]

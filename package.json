@@ -1,0 +1,22 @@
+{
+  "name": "猫箱挤挤",
+  "uuid": "b78bd22c-0c62-46b5-b5c6-3b0de5693083",
+  "scripts": {
+    "check": "node tools/check.cjs",
+    "serve": "node tools/serve.cjs",
+    "test:runtime": "node tools/runtime-check.cjs",
+    "test:art": "node tools/art-check.cjs",
+    "test:lifecycle": "node tools/lifecycle-check.cjs",
+    "test:home": "node tools/home-check.cjs",
+    "test:win": "node tools/win-check.cjs",
+    "test:audio": "node tools/audio-check.cjs",
+    "test:merge-feedback": "node tools/merge-feedback-check.cjs",
+    "test:full-round": "node tools/full-round-check.cjs",
+    "test:fail": "node tools/fail-check.cjs",
+    "test:drop-four": "node tools/drop-four-check.cjs",
+    "test:contact-skin": "node tools/contact-skin-check.cjs"
+  },
+  "creator": {
+    "version": "3.8.8"
+  }
+}

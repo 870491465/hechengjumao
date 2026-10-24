@@ -1,0 +1,42 @@
+[
+  {
+    "file": "box_shake.wav",
+    "sha256": "c39a79845afe42ffa45dcdc60c81d9d1dd828548630aa0610ddbfd5748450782"
+  },
+  {
+    "file": "land_heavy_01.wav",
+    "sha256": "c8e256fcaa9c598d728e97b1284cfd7bcb3183a439220e521a0dbd0b0b7e2b8a"
+  },
+  {
+    "file": "land_heavy_02.wav",
+    "sha256": "346d56a765b8fb243e68ee27473dddcb3ed97bb19e8981f038b3e54ab65b1a65"
+  },
+  {
+    "file": "land_heavy_03.wav",
+    "sha256": "f00b48eb631da3a5ad4e0baec6cfe3ea78d980f0e091af5ed473e6ed0a9f3533"
+  },
+  {
+    "file": "land_soft_01.wav",
+    "sha256": "893840db2c32a56001b1d84c7ab13d861333b8f6dbffd831c42cfb63de09bc1b"
+  },
+  {
+    "file": "land_soft_02.wav",
+    "sha256": "b7a88c91cde2121edd339cd70e16e7a61a36043cfed01db6c991ed02c11b686b"
+  },
+  {
+    "file": "land_soft_03.wav",
+    "sha256": "39442d990ae7a903093733e506001e2def78f8b2f52e9c87f91e400a07bc86fd"
+  },
+  {
+    "file": "merge_large.wav",
+    "sha256": "85641bfb109b69c485932df8d410dad7e6588fb69f13dc027b06dff5797f78d7"
+  },
+  {
+    "file": "merge_medium.wav",
+    "sha256": "6469e7ac4a8edd5b238dc43ce67dd118bd770c21035b6c6139d44d8493c3e306"
+  },
+  {
+    "file": "merge_small.wav",
+    "sha256": "8d91250c0f1b43cb27d36d425c7977192f5ddca0c002551a335e572c241237a8"
+  }
+]

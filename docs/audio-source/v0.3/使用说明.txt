@@ -1,0 +1,19 @@
+猫箱挤挤完整声音试听版 V0.3
+17项核心音效 + 1首64秒原创BGM。
+本批全部为程序声音合成/程序作曲；未使用外部采样，呼噜是模拟效果，不能视为实录。
+合成声沿用V0.1；落地与碰撞改为非调性布料接触，去掉鼓点、下坠低音与空箱共鸣。
+WAV：48kHz / 16bit / 单声道。MP3：试听用。
+
+使用wav目录接入；不能逐条归一化，否则会破坏相对音量。
+具体相对响度仍需游戏内配平，本批尚未进行实机听感验收。
+ui_tap 75ms；ui_open 165ms；cat_release 90ms；land_soft 145ms；land_heavy 210ms；cat_bump 85ms。
+merge_small/medium/large为250/300/350ms。
+chain_accent为基础档，连锁时可按C大调音级有限升调；第5次以上封顶。
+box_shake 800ms；danger_tick 105ms；cat_unlock 340ms；game_win 1450ms；game_lose 650ms；revive_success 560ms；cat_purr 3200ms。
+game_win已经含大猫合成起音，8级通关不叠加merge_large。
+晃箱触发合成时压低晃箱约4—6dB；危险解除停止待播danger_tick。
+呼噜低音量间歇播放，归入音效开关；BGM独立开关。
+BGM使用WAV整段循环；MP3仅供试听，需在引擎确认编码延迟。
+暂停、切后台、广告时管理声音，不在恢复时补播历史事件。
+
+已验证：解码、采样率、声道、时长、端点、削波；未宣称已完成真实听感验收。

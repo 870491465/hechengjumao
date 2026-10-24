@@ -1,0 +1,58 @@
+[
+  {
+    "file": "png/home-background.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "transparent": false
+  },
+  {
+    "file": "png/home-hero.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-logo.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-button-start.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-score-panel.png",
+    "width": 2142,
+    "height": 734,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-icon-sound.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-button-help.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "transparent": true
+  },
+  {
+    "file": "png/home-icon-settings.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "transparent": true
+  }
+]

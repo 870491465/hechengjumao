@@ -1,0 +1,37 @@
+[
+  {
+    "name": "box_back.png",
+    "sha256": "945235444de37ec09caa1823d7e2a0217aef28e04adb35fdb2b2796d384fd317",
+    "identical": true
+  },
+  {
+    "name": "box_front_rim.png",
+    "sha256": "806250d103ade866808fa6030180b5c2395e1de120dfc48d10d74ca69fb807a3",
+    "identical": true
+  },
+  {
+    "name": "button_shake_blank.png",
+    "sha256": "4a1c30d5b3b3abecefd890947afd0108a47a1998957f5f581c0ee296470e9384",
+    "identical": true
+  },
+  {
+    "name": "cat_01_cream.png",
+    "sha256": "75a74f10b948fb219f35ce041a803e8ac3d86aec603caad9b6af15d1fa4aa73e",
+    "identical": true
+  },
+  {
+    "name": "cat_02_grey.png",
+    "sha256": "6b054069e8a011850b8c6ab0b74dc8a6961d8ef07c241282fd08768113e7f5c3",
+    "identical": true
+  },
+  {
+    "name": "cat_03_bread.png",
+    "sha256": "d4aa3d314273790020db714469356d3e6a63dab844550278614650a536076924",
+    "identical": true
+  },
+  {
+    "name": "room_background.png",
+    "sha256": "8e7526d6f56583d565d64dac1bf22106843a6145d58fe9f98f8c389b6c3f0f04",
+    "identical": true
+  }
+]

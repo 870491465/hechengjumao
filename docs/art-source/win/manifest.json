@@ -1,0 +1,50 @@
+[
+  {
+    "name": "win-title",
+    "width": 1983,
+    "height": 793,
+    "alpha": true
+  },
+  {
+    "name": "win-hero",
+    "width": 1536,
+    "height": 1024,
+    "alpha": true
+  },
+  {
+    "name": "win-score-panel",
+    "width": 2076,
+    "height": 757,
+    "alpha": true
+  },
+  {
+    "name": "win-record-badge",
+    "width": 2087,
+    "height": 754,
+    "alpha": true
+  },
+  {
+    "name": "win-celebration",
+    "width": 941,
+    "height": 1672,
+    "alpha": true
+  },
+  {
+    "name": "win-button-replay",
+    "width": 2172,
+    "height": 724,
+    "alpha": true
+  },
+  {
+    "name": "win-button-home",
+    "width": 2172,
+    "height": 724,
+    "alpha": true
+  },
+  {
+    "name": "game-background",
+    "width": 941,
+    "height": 1672,
+    "alpha": true
+  }
+]

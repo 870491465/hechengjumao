@@ -1,0 +1,42 @@
+[
+  {
+    "file": "chain_accent_c.wav",
+    "source": "chain_accent.wav",
+    "sourceFrequency": 987.77,
+    "semitones": 1,
+    "note": "C6",
+    "method": "linear PCM resampling, original amplitude, no normalization",
+    "duration": 0.09910416666666666,
+    "sha256": "e0f07ebba51762395e00a809fe46028b0d8865aa801f200bee5880839747c494"
+  },
+  {
+    "file": "chain_accent_d.wav",
+    "source": "chain_accent.wav",
+    "sourceFrequency": 987.77,
+    "semitones": 3,
+    "note": "D6",
+    "method": "linear PCM resampling, original amplitude, no normalization",
+    "duration": 0.08829166666666667,
+    "sha256": "967e2de05946c10871bbc166caddfaa71c5a83e0a818cba0ae288eb8392331e5"
+  },
+  {
+    "file": "chain_accent_e.wav",
+    "source": "chain_accent.wav",
+    "sourceFrequency": 987.77,
+    "semitones": 5,
+    "note": "E6",
+    "method": "linear PCM resampling, original amplitude, no normalization",
+    "duration": 0.07864583333333333,
+    "sha256": "980b5514f9eb7c82877d93a2f116941bb7c3bc7d03be7d1a702d663d845d98cd"
+  },
+  {
+    "file": "chain_accent_g.wav",
+    "source": "chain_accent.wav",
+    "sourceFrequency": 987.77,
+    "semitones": 8,
+    "note": "G6",
+    "method": "linear PCM resampling, original amplitude, no normalization",
+    "duration": 0.06614583333333333,
+    "sha256": "fb2a6260d0e15c8e5afc4a783de9dc2225f7c926d89cfe49844f06167faac05a"
+  }
+]

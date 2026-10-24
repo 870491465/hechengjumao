@@ -1,0 +1,102 @@
+[
+  {
+    "level": 4,
+    "name": "cat_04_calico",
+    "png": "png/cat_04_calico.png",
+    "webp": "webp/cat_04_calico.webp",
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "visibleBoundsXYXY": [
+      148,
+      192,
+      1106,
+      1107
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "finalLevel": false
+  },
+  {
+    "level": 5,
+    "name": "cat_05_tuxedo",
+    "png": "png/cat_05_tuxedo.png",
+    "webp": "webp/cat_05_tuxedo.webp",
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "visibleBoundsXYXY": [
+      172,
+      212,
+      1082,
+      1077
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "finalLevel": false
+  },
+  {
+    "level": 6,
+    "name": "cat_06_brown_tabby",
+    "png": "png/cat_06_brown_tabby.png",
+    "webp": "webp/cat_06_brown_tabby.webp",
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "visibleBoundsXYXY": [
+      154,
+      205,
+      1099,
+      1100
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "finalLevel": false
+  },
+  {
+    "level": 7,
+    "name": "cat_07_orange_white",
+    "png": "png/cat_07_orange_white.png",
+    "webp": "webp/cat_07_orange_white.webp",
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "visibleBoundsXYXY": [
+      164,
+      208,
+      1091,
+      1092
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "finalLevel": false
+  },
+  {
+    "level": 8,
+    "name": "cat_08_golden",
+    "png": "png/cat_08_golden.png",
+    "webp": "webp/cat_08_golden.webp",
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "visibleBoundsXYXY": [
+      141,
+      192,
+      1113,
+      1130
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "finalLevel": true
+  }
+]

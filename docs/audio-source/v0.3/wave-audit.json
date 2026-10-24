@@ -1,0 +1,200 @@
+[
+  {
+    "file": "bgm_cozy_loop.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 64.0,
+    "peak": 0.053314208984375,
+    "sha256": "8ae7ad8435c355fb5b677633bb1742e8ec77f8efa5eb41231e0f7556aa4733fe"
+  },
+  {
+    "file": "box_shake.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.8,
+    "peak": 0.154815673828125,
+    "sha256": "a9245756a2595ee0bca5a08387d81438d14de69938f961bea31e1530efb77c75"
+  },
+  {
+    "file": "cat_bump.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.085,
+    "peak": 0.11993408203125,
+    "sha256": "718325bb99383267692b5be36eca681a3bb6f90a017d0fd60a1d7d0d4d71e958"
+  },
+  {
+    "file": "cat_purr.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 3.2,
+    "peak": 0.04168701171875,
+    "sha256": "1a9da16e8a193dcf2259091c50a1f42fd11ef67e3b2e7f67f5d7820ae2aee516"
+  },
+  {
+    "file": "cat_release.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.09,
+    "peak": 0.0550537109375,
+    "sha256": "44217c3e298267fa13845d7b12339f79a2dc907386b9ff9bbe990e327fee7485"
+  },
+  {
+    "file": "cat_unlock.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.34,
+    "peak": 0.05023193359375,
+    "sha256": "b1f2e31b3318692c20cd0fd1936aa61bfad62da684be3e638a525fe4fe2d7d20"
+  },
+  {
+    "file": "chain_accent.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.105,
+    "peak": 0.03790283203125,
+    "sha256": "9c14ff7dc2ba58c47471e59a52c6b9305f60c7740e082d056fd632fe9b40aa01"
+  },
+  {
+    "file": "chain_accent_c.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.09910416666666666,
+    "peak": 0.037872314453125,
+    "sha256": "e0f07ebba51762395e00a809fe46028b0d8865aa801f200bee5880839747c494"
+  },
+  {
+    "file": "chain_accent_d.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.08829166666666667,
+    "peak": 0.037872314453125,
+    "sha256": "967e2de05946c10871bbc166caddfaa71c5a83e0a818cba0ae288eb8392331e5"
+  },
+  {
+    "file": "chain_accent_e.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.07864583333333333,
+    "peak": 0.03790283203125,
+    "sha256": "980b5514f9eb7c82877d93a2f116941bb7c3bc7d03be7d1a702d663d845d98cd"
+  },
+  {
+    "file": "chain_accent_g.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.06614583333333333,
+    "peak": 0.037811279296875,
+    "sha256": "fb2a6260d0e15c8e5afc4a783de9dc2225f7c926d89cfe49844f06167faac05a"
+  },
+  {
+    "file": "danger_tick.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.105,
+    "peak": 0.051055908203125,
+    "sha256": "c849e4116ef9c12615c6a3db2e10297484aa162f38b9555c4cd154d828625a8f"
+  },
+  {
+    "file": "game_lose.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.65,
+    "peak": 0.050201416015625,
+    "sha256": "13a6d583ba6062aac3793b8a4ac26a302cf65561e5e19d7e8f2b5a39bbea3be0"
+  },
+  {
+    "file": "game_win.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 1.45,
+    "peak": 0.21356201171875,
+    "sha256": "05e5bc6a76933789ed0d86c25097cc66eae4a744fbf7690d7e9977786ab5c62d"
+  },
+  {
+    "file": "land_heavy.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.21,
+    "peak": 0.1497802734375,
+    "sha256": "891c7f4f82b96254e5984d797f9c9989c5257e03668e3cb5443e29ffa646d94f"
+  },
+  {
+    "file": "land_soft.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.145,
+    "peak": 0.131500244140625,
+    "sha256": "00a259f58420c52938716a3c4153c3de256dbd8938b9abaf99d3823ee5d4cb27"
+  },
+  {
+    "file": "merge_large.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.35,
+    "peak": 0.2669677734375,
+    "sha256": "dae430fed67bf755eccc0dfc1a0a3c2911aac457b797e7f6b8e1b1f2065c9068"
+  },
+  {
+    "file": "merge_medium.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.3,
+    "peak": 0.28509521484375,
+    "sha256": "2f85aa334659ecff111c21f55c0c8311ee4be873c082d7559f9d6fdd9fdbb877"
+  },
+  {
+    "file": "merge_small.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.25,
+    "peak": 0.268280029296875,
+    "sha256": "6410736731c38b172bbc652a4bfc049c5067996acf55724ff70a3992322a77b9"
+  },
+  {
+    "file": "revive_success.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.56,
+    "peak": 0.065643310546875,
+    "sha256": "49e2ecaf912db1dddc18d3f15703433177c5223d5647867030a0dae8007b48e9"
+  },
+  {
+    "file": "ui_open.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.165,
+    "peak": 0.095703125,
+    "sha256": "b0acbe043da2cee77d61dedcb86fd18bf83585d6640d7495b151ae22dbf3cecd"
+  },
+  {
+    "file": "ui_tap.wav",
+    "rate": 48000,
+    "channels": 1,
+    "bits": 16,
+    "seconds": 0.075,
+    "peak": 0.1524658203125,
+    "sha256": "9d0a09eedd6391570f5c4913767357741206ca4190ac578042c7446aed52fe4b"
+  }
+]

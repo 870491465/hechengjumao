@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ui_tap",
+    "label": "点击按钮",
+    "duration_ms": 75,
+    "peak_dbfs": -16.3,
+    "note": "指腹轻点厚纸卡；短、轻，无低频鼓点"
+  },
+  {
+    "name": "ui_open",
+    "label": "弹窗打开",
+    "duration_ms": 165,
+    "peak_dbfs": -20.4,
+    "note": "纸卡轻翻，末端一点柔和拨音"
+  },
+  {
+    "name": "cat_release",
+    "label": "投放成功",
+    "duration_ms": 90,
+    "peak_dbfs": -25.2,
+    "note": "轻微布料脱手，不带长风声"
+  },
+  {
+    "name": "land_soft",
+    "label": "轻落地",
+    "duration_ms": 145,
+    "peak_dbfs": -17.6,
+    "note": "布料软接触；无调性、无鼓点；本轮尚待确认"
+  },
+  {
+    "name": "land_heavy",
+    "label": "重落地",
+    "duration_ms": 210,
+    "peak_dbfs": -16.5,
+    "note": "增加接触厚度与时长，避免空箱共鸣；本轮尚待确认"
+  },
+  {
+    "name": "cat_bump",
+    "label": "有效碰撞",
+    "duration_ms": 85,
+    "peak_dbfs": -18.4,
+    "note": "两个布团的轻接触，低于落地音量"
+  },
+  {
+    "name": "merge_small",
+    "label": "普通合成",
+    "duration_ms": 250,
+    "peak_dbfs": -11.4,
+    "note": "沿用第一批合成声，保持已认可方向"
+  },
+  {
+    "name": "merge_medium",
+    "label": "中型合成",
+    "duration_ms": 300,
+    "peak_dbfs": -10.9,
+    "note": "沿用第一批合成声，保持已认可方向"
+  },
+  {
+    "name": "merge_large",
+    "label": "大猫合成",
+    "duration_ms": 350,
+    "peak_dbfs": -11.5,
+    "note": "沿用第一批合成声，保持已认可方向"
+  },
+  {
+    "name": "chain_accent",
+    "label": "连锁点缀",
+    "duration_ms": 105,
+    "peak_dbfs": -28.4,
+    "note": "此文件为基础档；运行时按连锁档位升调，不无限上升"
+  },
+  {
+    "name": "box_shake",
+    "label": "晃箱",
+    "duration_ms": 800,
+    "peak_dbfs": -16.2,
+    "note": "0.8秒，三组左右轻晃，纸板与布团滑动"
+  },
+  {
+    "name": "danger_tick",
+    "label": "危险提示",
+    "duration_ms": 105,
+    "peak_dbfs": -25.8,
+    "note": "柔和木质提示，短促、不做警报"
+  },
+  {
+    "name": "cat_unlock",
+    "label": "首次解锁",
+    "duration_ms": 340,
+    "peak_dbfs": -26.0,
+    "note": "两颗柔和拨音"
+  },
+  {
+    "name": "game_win",
+    "label": "通关",
+    "duration_ms": 1450,
+    "peak_dbfs": -13.4,
+    "note": "已含大猫合成起音；触发8级时只播此组合，避免重复"
+  },
+  {
+    "name": "game_lose",
+    "label": "失败",
+    "duration_ms": 650,
+    "peak_dbfs": -26.0,
+    "note": "两颗温和下行音，无压迫感"
+  },
+  {
+    "name": "revive_success",
+    "label": "复活成功",
+    "duration_ms": 560,
+    "peak_dbfs": -23.7,
+    "note": "轻柔释放与上行拨音"
+  },
+  {
+    "name": "cat_purr",
+    "label": "猫咪呼噜（模拟）",
+    "duration_ms": 3200,
+    "peak_dbfs": -27.6,
+    "note": "程序模拟呼噜；非真实猫咪录音；低音量间歇播放，待试听确认"
+  },
+  {
+    "name": "bgm_cozy_loop",
+    "label": "午后猫箱 BGM",
+    "duration_ms": 64000,
+    "peak_dbfs": -25.5,
+    "note": "原创程序作曲；75BPM；无鼓、无人声；WAV按64秒整段循环，MP3仅试听"
+  }
+]

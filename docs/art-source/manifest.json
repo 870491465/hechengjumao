@@ -1,0 +1,129 @@
+{
+  "cat_01_cream": {
+    "file": "assets/cat_01_cream.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sourceRect": [
+      178,
+      214,
+      898,
+      860
+    ],
+    "alpha": true
+  },
+  "cat_02_grey": {
+    "file": "assets/cat_02_grey.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sourceRect": [
+      168,
+      214,
+      918,
+      874
+    ],
+    "alpha": true
+  },
+  "cat_03_bread": {
+    "file": "assets/cat_03_bread.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sourceRect": [
+      177,
+      214,
+      901,
+      863
+    ],
+    "alpha": true
+  },
+  "box_back": {
+    "file": "assets/box_back.png",
+    "size": [
+      1079,
+      1457
+    ],
+    "sourceRect": [
+      37,
+      106,
+      1005,
+      1225
+    ],
+    "alpha": true
+  },
+  "box_front_rim": {
+    "file": "assets/box_front_rim.png",
+    "size": [
+      1484,
+      1060
+    ],
+    "sourceRect": [
+      29,
+      480,
+      1428,
+      119
+    ],
+    "alpha": true
+  },
+  "room_background": {
+    "file": "assets/room_background.png",
+    "size": [
+      941,
+      1672
+    ],
+    "sourceRect": [
+      0,
+      0,
+      941,
+      1672
+    ],
+    "alpha": false
+  },
+  "button_shake_blank": {
+    "file": "assets/button_shake_blank.png",
+    "size": [
+      2167,
+      725
+    ],
+    "sourceRect": [
+      108,
+      74,
+      1947,
+      568
+    ],
+    "alpha": true
+  },
+  "physics": {
+    "innerWidth": 320,
+    "innerHeight": 432,
+    "radiusOverW": [
+      0.04,
+      0.055,
+      0.075
+    ],
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "layers": [
+      "room_background",
+      "box_back",
+      "danger_line",
+      "cats",
+      "box_front_rim",
+      "button_shake_blank",
+      "text"
+    ],
+    "boxInnerNormalized": {
+      "left": 0.092,
+      "right": 0.908,
+      "top": 0.03,
+      "floor": 0.938
+    },
+    "note": "Source rectangles omit near-transparent edge noise. Keep sprite and circle in separate nodes. Rear decorative cheeks are outside colliders."
+  }
+}

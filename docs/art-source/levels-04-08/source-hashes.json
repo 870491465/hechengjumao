@@ -1,0 +1,27 @@
+[
+  {
+    "level": 4,
+    "file": "cat_04_calico.png",
+    "sha256": "fddb49b1c9ef8d2b5357d0b755de1ad689e98a071c61857ea8998e375600559c"
+  },
+  {
+    "level": 5,
+    "file": "cat_05_tuxedo.png",
+    "sha256": "8bbde8998ed66d98bab771781ef5a70ac282c2e46a85b5a7bff8f935ce40c136"
+  },
+  {
+    "level": 6,
+    "file": "cat_06_brown_tabby.png",
+    "sha256": "de10385e51a8b8fcb9e63f9f32cc56ba37f739bfefc52dee37912a6e9918bbf1"
+  },
+  {
+    "level": 7,
+    "file": "cat_07_orange_white.png",
+    "sha256": "d1a4c62ed0ee7ae5adb6a662c3562a2cd42c48940ae369a8c4d4d8895c51becc"
+  },
+  {
+    "level": 8,
+    "file": "cat_08_golden.png",
+    "sha256": "5ad0efcc8cd55bdf494d1dd8cf4a72e6e87216cf170453e03ed693b616c8f0f9"
+  }
+]

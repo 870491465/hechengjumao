@@ -1,0 +1,1458 @@
+{
+  "seed": "0x20261023",
+  "drops": 144,
+  "shakeUses": 2,
+  "samples": [
+    {
+      "drop": 1,
+      "time": 0.72,
+      "score": 0,
+      "cats": 1,
+      "maxLevel": 1,
+      "heightRatio": 0,
+      "areaRatio": 0.005,
+      "danger": 0
+    },
+    {
+      "drop": 2,
+      "time": 1.43,
+      "score": 0,
+      "cats": 2,
+      "maxLevel": 1,
+      "heightRatio": 0.078,
+      "areaRatio": 0.009,
+      "danger": 0
+    },
+    {
+      "drop": 3,
+      "time": 2.15,
+      "score": 0,
+      "cats": 3,
+      "maxLevel": 2,
+      "heightRatio": 0.078,
+      "areaRatio": 0.018,
+      "danger": 0
+    },
+    {
+      "drop": 4,
+      "time": 2.87,
+      "score": 0,
+      "cats": 4,
+      "maxLevel": 2,
+      "heightRatio": 0.106,
+      "areaRatio": 0.022,
+      "danger": 0
+    },
+    {
+      "drop": 5,
+      "time": 3.58,
+      "score": 10,
+      "cats": 4,
+      "maxLevel": 2,
+      "heightRatio": 0.1,
+      "areaRatio": 0.03,
+      "danger": 0
+    },
+    {
+      "drop": 6,
+      "time": 4.3,
+      "score": 30,
+      "cats": 4,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.038,
+      "danger": 0
+    },
+    {
+      "drop": 7,
+      "time": 5.02,
+      "score": 50,
+      "cats": 4,
+      "maxLevel": 3,
+      "heightRatio": 0.142,
+      "areaRatio": 0.041,
+      "danger": 0
+    },
+    {
+      "drop": 8,
+      "time": 5.73,
+      "score": 60,
+      "cats": 4,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.045,
+      "danger": 0
+    },
+    {
+      "drop": 9,
+      "time": 6.45,
+      "score": 60,
+      "cats": 5,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.05,
+      "danger": 0
+    },
+    {
+      "drop": 10,
+      "time": 7.17,
+      "score": 60,
+      "cats": 6,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.059,
+      "danger": 0
+    },
+    {
+      "drop": 11,
+      "time": 7.88,
+      "score": 80,
+      "cats": 6,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.062,
+      "danger": 0
+    },
+    {
+      "drop": 12,
+      "time": 8.6,
+      "score": 90,
+      "cats": 6,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.066,
+      "danger": 0
+    },
+    {
+      "drop": 13,
+      "time": 9.32,
+      "score": 100,
+      "cats": 6,
+      "maxLevel": 3,
+      "heightRatio": 0.137,
+      "areaRatio": 0.074,
+      "danger": 0
+    },
+    {
+      "drop": 14,
+      "time": 10.03,
+      "score": 168,
+      "cats": 5,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.078,
+      "danger": 0
+    },
+    {
+      "drop": 15,
+      "time": 10.75,
+      "score": 236,
+      "cats": 4,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.082,
+      "danger": 0
+    },
+    {
+      "drop": 16,
+      "time": 11.47,
+      "score": 236,
+      "cats": 5,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.098,
+      "danger": 0
+    },
+    {
+      "drop": 17,
+      "time": 12.18,
+      "score": 276,
+      "cats": 5,
+      "maxLevel": 4,
+      "heightRatio": 0.188,
+      "areaRatio": 0.099,
+      "danger": 0
+    },
+    {
+      "drop": 18,
+      "time": 12.9,
+      "score": 276,
+      "cats": 6,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.103,
+      "danger": 0
+    },
+    {
+      "drop": 19,
+      "time": 13.62,
+      "score": 276,
+      "cats": 7,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.112,
+      "danger": 0
+    },
+    {
+      "drop": 20,
+      "time": 14.33,
+      "score": 276,
+      "cats": 8,
+      "maxLevel": 4,
+      "heightRatio": 0.182,
+      "areaRatio": 0.121,
+      "danger": 0
+    },
+    {
+      "drop": 21,
+      "time": 15.05,
+      "score": 296,
+      "cats": 8,
+      "maxLevel": 4,
+      "heightRatio": 0.213,
+      "areaRatio": 0.124,
+      "danger": 0
+    },
+    {
+      "drop": 22,
+      "time": 15.77,
+      "score": 296,
+      "cats": 9,
+      "maxLevel": 4,
+      "heightRatio": 0.183,
+      "areaRatio": 0.129,
+      "danger": 0
+    },
+    {
+      "drop": 23,
+      "time": 16.48,
+      "score": 306,
+      "cats": 9,
+      "maxLevel": 4,
+      "heightRatio": 0.183,
+      "areaRatio": 0.133,
+      "danger": 0
+    },
+    {
+      "drop": 24,
+      "time": 17.2,
+      "score": 306,
+      "cats": 10,
+      "maxLevel": 4,
+      "heightRatio": 0.209,
+      "areaRatio": 0.137,
+      "danger": 0
+    },
+    {
+      "drop": 25,
+      "time": 17.92,
+      "score": 316,
+      "cats": 10,
+      "maxLevel": 4,
+      "heightRatio": 0.201,
+      "areaRatio": 0.145,
+      "danger": 0
+    },
+    {
+      "drop": 26,
+      "time": 18.63,
+      "score": 384,
+      "cats": 9,
+      "maxLevel": 4,
+      "heightRatio": 0.288,
+      "areaRatio": 0.145,
+      "danger": 0
+    },
+    {
+      "drop": 27,
+      "time": 19.35,
+      "score": 502,
+      "cats": 7,
+      "maxLevel": 5,
+      "heightRatio": 0.246,
+      "areaRatio": 0.143,
+      "danger": 0
+    },
+    {
+      "drop": 28,
+      "time": 20.07,
+      "score": 502,
+      "cats": 8,
+      "maxLevel": 5,
+      "heightRatio": 0.246,
+      "areaRatio": 0.148,
+      "danger": 0
+    },
+    {
+      "drop": 29,
+      "time": 20.78,
+      "score": 512,
+      "cats": 8,
+      "maxLevel": 5,
+      "heightRatio": 0.246,
+      "areaRatio": 0.156,
+      "danger": 0
+    },
+    {
+      "drop": 30,
+      "time": 21.5,
+      "score": 512,
+      "cats": 9,
+      "maxLevel": 5,
+      "heightRatio": 0.247,
+      "areaRatio": 0.164,
+      "danger": 0
+    },
+    {
+      "drop": 31,
+      "time": 22.22,
+      "score": 532,
+      "cats": 9,
+      "maxLevel": 5,
+      "heightRatio": 0.251,
+      "areaRatio": 0.172,
+      "danger": 0
+    },
+    {
+      "drop": 32,
+      "time": 22.93,
+      "score": 696,
+      "cats": 7,
+      "maxLevel": 5,
+      "heightRatio": 0.28,
+      "areaRatio": 0.167,
+      "danger": 0
+    },
+    {
+      "drop": 33,
+      "time": 23.65,
+      "score": 730,
+      "cats": 6,
+      "maxLevel": 5,
+      "heightRatio": 0.249,
+      "areaRatio": 0.173,
+      "danger": 0
+    },
+    {
+      "drop": 34,
+      "time": 24.37,
+      "score": 730,
+      "cats": 7,
+      "maxLevel": 5,
+      "heightRatio": 0.275,
+      "areaRatio": 0.178,
+      "danger": 0
+    },
+    {
+      "drop": 35,
+      "time": 25.08,
+      "score": 730,
+      "cats": 8,
+      "maxLevel": 5,
+      "heightRatio": 0.276,
+      "areaRatio": 0.183,
+      "danger": 0
+    },
+    {
+      "drop": 36,
+      "time": 25.8,
+      "score": 740,
+      "cats": 8,
+      "maxLevel": 5,
+      "heightRatio": 0.276,
+      "areaRatio": 0.187,
+      "danger": 0
+    },
+    {
+      "drop": 37,
+      "time": 26.52,
+      "score": 740,
+      "cats": 9,
+      "maxLevel": 5,
+      "heightRatio": 0.276,
+      "areaRatio": 0.191,
+      "danger": 0
+    },
+    {
+      "drop": 38,
+      "time": 27.23,
+      "score": 740,
+      "cats": 10,
+      "maxLevel": 5,
+      "heightRatio": 0.292,
+      "areaRatio": 0.207,
+      "danger": 0
+    },
+    {
+      "drop": 39,
+      "time": 27.95,
+      "score": 780,
+      "cats": 10,
+      "maxLevel": 5,
+      "heightRatio": 0.359,
+      "areaRatio": 0.212,
+      "danger": 0
+    },
+    {
+      "drop": 40,
+      "time": 28.67,
+      "score": 800,
+      "cats": 10,
+      "maxLevel": 5,
+      "heightRatio": 0.35,
+      "areaRatio": 0.216,
+      "danger": 0
+    },
+    {
+      "drop": 41,
+      "time": 29.38,
+      "score": 810,
+      "cats": 10,
+      "maxLevel": 5,
+      "heightRatio": 0.351,
+      "areaRatio": 0.224,
+      "danger": 0
+    },
+    {
+      "drop": 42,
+      "time": 30.1,
+      "score": 926,
+      "cats": 9,
+      "maxLevel": 5,
+      "heightRatio": 0.392,
+      "areaRatio": 0.226,
+      "danger": 0
+    },
+    {
+      "drop": 43,
+      "time": 30.82,
+      "score": 1218,
+      "cats": 7,
+      "maxLevel": 6,
+      "heightRatio": 0.4,
+      "areaRatio": 0.218,
+      "danger": 0
+    },
+    {
+      "drop": 44,
+      "time": 31.53,
+      "score": 1218,
+      "cats": 8,
+      "maxLevel": 6,
+      "heightRatio": 0.4,
+      "areaRatio": 0.227,
+      "danger": 0
+    },
+    {
+      "drop": 45,
+      "time": 32.25,
+      "score": 1238,
+      "cats": 8,
+      "maxLevel": 6,
+      "heightRatio": 0.394,
+      "areaRatio": 0.235,
+      "danger": 0
+    },
+    {
+      "drop": 46,
+      "time": 32.97,
+      "score": 1598,
+      "cats": 6,
+      "maxLevel": 6,
+      "heightRatio": 0.421,
+      "areaRatio": 0.219,
+      "danger": 0
+    },
+    {
+      "drop": 47,
+      "time": 33.68,
+      "score": 1598,
+      "cats": 7,
+      "maxLevel": 6,
+      "heightRatio": 0.389,
+      "areaRatio": 0.223,
+      "danger": 0
+    },
+    {
+      "drop": 48,
+      "time": 34.4,
+      "score": 1598,
+      "cats": 8,
+      "maxLevel": 6,
+      "heightRatio": 0.41,
+      "areaRatio": 0.24,
+      "danger": 0
+    },
+    {
+      "drop": 49,
+      "time": 35.12,
+      "score": 1598,
+      "cats": 9,
+      "maxLevel": 6,
+      "heightRatio": 0.372,
+      "areaRatio": 0.244,
+      "danger": 0
+    },
+    {
+      "drop": 50,
+      "time": 35.83,
+      "score": 1638,
+      "cats": 9,
+      "maxLevel": 6,
+      "heightRatio": 0.369,
+      "areaRatio": 0.245,
+      "danger": 0
+    },
+    {
+      "drop": 51,
+      "time": 36.55,
+      "score": 1648,
+      "cats": 9,
+      "maxLevel": 6,
+      "heightRatio": 0.413,
+      "areaRatio": 0.253,
+      "danger": 0
+    },
+    {
+      "drop": 52,
+      "time": 37.27,
+      "score": 1668,
+      "cats": 9,
+      "maxLevel": 6,
+      "heightRatio": 0.427,
+      "areaRatio": 0.268,
+      "danger": 0
+    },
+    {
+      "drop": 53,
+      "time": 37.98,
+      "score": 1668,
+      "cats": 10,
+      "maxLevel": 6,
+      "heightRatio": 0.406,
+      "areaRatio": 0.284,
+      "danger": 0
+    },
+    {
+      "drop": 54,
+      "time": 38.7,
+      "score": 1708,
+      "cats": 10,
+      "maxLevel": 6,
+      "heightRatio": 0.462,
+      "areaRatio": 0.285,
+      "danger": 0
+    },
+    {
+      "drop": 55,
+      "time": 39.42,
+      "score": 1708,
+      "cats": 11,
+      "maxLevel": 6,
+      "heightRatio": 0.44,
+      "areaRatio": 0.294,
+      "danger": 0
+    },
+    {
+      "drop": 56,
+      "time": 40.13,
+      "score": 1728,
+      "cats": 11,
+      "maxLevel": 6,
+      "heightRatio": 0.451,
+      "areaRatio": 0.301,
+      "danger": 0
+    },
+    {
+      "drop": 57,
+      "time": 40.85,
+      "score": 1728,
+      "cats": 12,
+      "maxLevel": 6,
+      "heightRatio": 0.529,
+      "areaRatio": 0.306,
+      "danger": 0
+    },
+    {
+      "drop": 58,
+      "time": 41.57,
+      "score": 1738,
+      "cats": 12,
+      "maxLevel": 6,
+      "heightRatio": 0.528,
+      "areaRatio": 0.31,
+      "danger": 0
+    },
+    {
+      "drop": 59,
+      "time": 42.28,
+      "score": 1738,
+      "cats": 13,
+      "maxLevel": 6,
+      "heightRatio": 0.529,
+      "areaRatio": 0.314,
+      "danger": 0
+    },
+    {
+      "drop": 60,
+      "time": 43,
+      "score": 1748,
+      "cats": 13,
+      "maxLevel": 6,
+      "heightRatio": 0.529,
+      "areaRatio": 0.323,
+      "danger": 0
+    },
+    {
+      "drop": 61,
+      "time": 43.72,
+      "score": 1816,
+      "cats": 12,
+      "maxLevel": 6,
+      "heightRatio": 0.529,
+      "areaRatio": 0.322,
+      "danger": 0
+    },
+    {
+      "drop": 62,
+      "time": 44.43,
+      "score": 2232,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.618,
+      "areaRatio": 0.305,
+      "danger": 0
+    },
+    {
+      "drop": 63,
+      "time": 45.15,
+      "score": 2322,
+      "cats": 9,
+      "maxLevel": 7,
+      "heightRatio": 0.618,
+      "areaRatio": 0.305,
+      "danger": 0
+    },
+    {
+      "drop": 64,
+      "time": 45.87,
+      "score": 2356,
+      "cats": 8,
+      "maxLevel": 7,
+      "heightRatio": 0.615,
+      "areaRatio": 0.308,
+      "danger": 0
+    },
+    {
+      "drop": 65,
+      "time": 46.58,
+      "score": 2356,
+      "cats": 9,
+      "maxLevel": 7,
+      "heightRatio": 0.58,
+      "areaRatio": 0.312,
+      "danger": 0
+    },
+    {
+      "drop": 66,
+      "time": 47.3,
+      "score": 2366,
+      "cats": 9,
+      "maxLevel": 7,
+      "heightRatio": 0.49,
+      "areaRatio": 0.316,
+      "danger": 0
+    },
+    {
+      "drop": 67,
+      "time": 48.02,
+      "score": 2366,
+      "cats": 10,
+      "maxLevel": 7,
+      "heightRatio": 0.47,
+      "areaRatio": 0.321,
+      "danger": 0
+    },
+    {
+      "drop": 68,
+      "time": 48.73,
+      "score": 2366,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.47,
+      "areaRatio": 0.325,
+      "danger": 0
+    },
+    {
+      "drop": 69,
+      "time": 49.45,
+      "score": 2376,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.47,
+      "areaRatio": 0.329,
+      "danger": 0
+    },
+    {
+      "drop": 70,
+      "time": 50.17,
+      "score": 2386,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.497,
+      "areaRatio": 0.338,
+      "danger": 0
+    },
+    {
+      "drop": 71,
+      "time": 50.88,
+      "score": 2406,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.496,
+      "areaRatio": 0.341,
+      "danger": 0
+    },
+    {
+      "drop": 72,
+      "time": 51.6,
+      "score": 2406,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.511,
+      "areaRatio": 0.35,
+      "danger": 0
+    },
+    {
+      "drop": 73,
+      "time": 52.32,
+      "score": 2426,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.556,
+      "areaRatio": 0.357,
+      "danger": 0
+    },
+    {
+      "drop": 74,
+      "time": 53.03,
+      "score": 2426,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.557,
+      "areaRatio": 0.373,
+      "danger": 0
+    },
+    {
+      "drop": 75,
+      "time": 53.75,
+      "score": 2618,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.634,
+      "areaRatio": 0.365,
+      "danger": 0
+    },
+    {
+      "drop": 76,
+      "time": 54.47,
+      "score": 2652,
+      "cats": 10,
+      "maxLevel": 7,
+      "heightRatio": 0.58,
+      "areaRatio": 0.368,
+      "danger": 0
+    },
+    {
+      "drop": 77,
+      "time": 55.18,
+      "score": 2652,
+      "cats": 11,
+      "maxLevel": 7,
+      "heightRatio": 0.579,
+      "areaRatio": 0.377,
+      "danger": 0
+    },
+    {
+      "drop": 78,
+      "time": 55.9,
+      "score": 2652,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.579,
+      "areaRatio": 0.385,
+      "danger": 0
+    },
+    {
+      "drop": 79,
+      "time": 56.62,
+      "score": 2672,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.579,
+      "areaRatio": 0.393,
+      "danger": 0
+    },
+    {
+      "drop": 80,
+      "time": 57.33,
+      "score": 2672,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.578,
+      "areaRatio": 0.402,
+      "danger": 0
+    },
+    {
+      "drop": 81,
+      "time": 58.05,
+      "score": 2672,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.579,
+      "areaRatio": 0.406,
+      "danger": 0
+    },
+    {
+      "drop": 82,
+      "time": 58.77,
+      "score": 2672,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.579,
+      "areaRatio": 0.422,
+      "danger": 0
+    },
+    {
+      "drop": 83,
+      "time": 59.48,
+      "score": 2712,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.611,
+      "areaRatio": 0.423,
+      "danger": 0
+    },
+    {
+      "drop": 84,
+      "time": 60.2,
+      "score": 2722,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.6,
+      "areaRatio": 0.431,
+      "danger": 0
+    },
+    {
+      "drop": 85,
+      "time": 60.92,
+      "score": 3150,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.617,
+      "areaRatio": 0.414,
+      "danger": 0
+    },
+    {
+      "drop": 86,
+      "time": 61.63,
+      "score": 3150,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.419,
+      "danger": 0
+    },
+    {
+      "drop": 87,
+      "time": 62.35,
+      "score": 3150,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.424,
+      "danger": 0
+    },
+    {
+      "drop": 88,
+      "time": 63.07,
+      "score": 3150,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.428,
+      "danger": 0
+    },
+    {
+      "drop": 89,
+      "time": 63.78,
+      "score": 3160,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.432,
+      "danger": 0
+    },
+    {
+      "drop": 90,
+      "time": 64.5,
+      "score": 3170,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.436,
+      "danger": 0
+    },
+    {
+      "drop": 91,
+      "time": 65.22,
+      "score": 3170,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.445,
+      "danger": 0
+    },
+    {
+      "drop": 92,
+      "time": 65.93,
+      "score": 3190,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.616,
+      "areaRatio": 0.452,
+      "danger": 0
+    },
+    {
+      "drop": 93,
+      "time": 66.65,
+      "score": 3210,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.649,
+      "areaRatio": 0.456,
+      "danger": 0
+    },
+    {
+      "drop": 94,
+      "time": 67.37,
+      "score": 3244,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.649,
+      "areaRatio": 0.459,
+      "danger": 0
+    },
+    {
+      "drop": 95,
+      "time": 68.08,
+      "score": 3334,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.662,
+      "areaRatio": 0.469,
+      "danger": 0
+    },
+    {
+      "drop": 96,
+      "time": 68.8,
+      "score": 3462,
+      "cats": 12,
+      "maxLevel": 7,
+      "heightRatio": 0.704,
+      "areaRatio": 0.465,
+      "danger": 0
+    },
+    {
+      "drop": 97,
+      "time": 69.52,
+      "score": 3462,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.701,
+      "areaRatio": 0.474,
+      "danger": 0
+    },
+    {
+      "drop": 98,
+      "time": 70.23,
+      "score": 3472,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.703,
+      "areaRatio": 0.478,
+      "danger": 0
+    },
+    {
+      "drop": 99,
+      "time": 70.95,
+      "score": 3472,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.703,
+      "areaRatio": 0.483,
+      "danger": 0
+    },
+    {
+      "drop": 100,
+      "time": 71.67,
+      "score": 3472,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.703,
+      "areaRatio": 0.491,
+      "danger": 0
+    },
+    {
+      "drop": 101,
+      "time": 72.38,
+      "score": 3472,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.703,
+      "areaRatio": 0.5,
+      "danger": 0
+    },
+    {
+      "drop": 102,
+      "time": 73.1,
+      "score": 3492,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.727,
+      "areaRatio": 0.503,
+      "danger": 0
+    },
+    {
+      "drop": 103,
+      "time": 73.82,
+      "score": 3526,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.72,
+      "areaRatio": 0.506,
+      "danger": 0
+    },
+    {
+      "drop": 104,
+      "time": 74.53,
+      "score": 3536,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.708,
+      "areaRatio": 0.514,
+      "danger": 0
+    },
+    {
+      "drop": 105,
+      "time": 75.25,
+      "score": 3604,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.716,
+      "areaRatio": 0.518,
+      "danger": 0
+    },
+    {
+      "drop": 106,
+      "time": 75.97,
+      "score": 3624,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.716,
+      "areaRatio": 0.521,
+      "danger": 0
+    },
+    {
+      "drop": 107,
+      "time": 76.68,
+      "score": 3760,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.716,
+      "areaRatio": 0.521,
+      "danger": 0
+    },
+    {
+      "drop": 108,
+      "time": 77.4,
+      "score": 3920,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.811,
+      "areaRatio": 0.519,
+      "danger": 0
+    },
+    {
+      "drop": 109,
+      "time": 78.12,
+      "score": 3920,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.745,
+      "areaRatio": 0.527,
+      "danger": 0
+    },
+    {
+      "drop": 110,
+      "time": 78.83,
+      "score": 3988,
+      "cats": 13,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.527,
+      "danger": 0
+    },
+    {
+      "drop": 111,
+      "time": 79.55,
+      "score": 3988,
+      "cats": 14,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.532,
+      "danger": 0
+    },
+    {
+      "drop": 112,
+      "time": 80.27,
+      "score": 3988,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.54,
+      "danger": 0
+    },
+    {
+      "drop": 113,
+      "time": 80.98,
+      "score": 4008,
+      "cats": 15,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.548,
+      "danger": 0
+    },
+    {
+      "drop": 114,
+      "time": 81.7,
+      "score": 4008,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.552,
+      "danger": 0
+    },
+    {
+      "drop": 115,
+      "time": 82.42,
+      "score": 4018,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.749,
+      "areaRatio": 0.56,
+      "danger": 0
+    },
+    {
+      "drop": 116,
+      "time": 83.13,
+      "score": 4038,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.814,
+      "areaRatio": 0.564,
+      "danger": 0
+    },
+    {
+      "drop": 117,
+      "time": 83.85,
+      "score": 4038,
+      "cats": 17,
+      "maxLevel": 7,
+      "heightRatio": 0.814,
+      "areaRatio": 0.568,
+      "danger": 0
+    },
+    {
+      "drop": 118,
+      "time": 84.57,
+      "score": 4038,
+      "cats": 18,
+      "maxLevel": 7,
+      "heightRatio": 0.814,
+      "areaRatio": 0.573,
+      "danger": 0
+    },
+    {
+      "drop": 119,
+      "time": 85.28,
+      "score": 4048,
+      "cats": 18,
+      "maxLevel": 7,
+      "heightRatio": 0.814,
+      "areaRatio": 0.581,
+      "danger": 0
+    },
+    {
+      "drop": 120,
+      "time": 86,
+      "score": 4068,
+      "cats": 18,
+      "maxLevel": 7,
+      "heightRatio": 0.814,
+      "areaRatio": 0.584,
+      "danger": 0
+    },
+    {
+      "drop": 121,
+      "time": 86.72,
+      "score": 4078,
+      "cats": 18,
+      "maxLevel": 7,
+      "heightRatio": 0.815,
+      "areaRatio": 0.588,
+      "danger": 0
+    },
+    {
+      "drop": 122,
+      "time": 87.43,
+      "score": 4078,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.815,
+      "areaRatio": 0.604,
+      "danger": 0
+    },
+    {
+      "drop": 123,
+      "time": 88.15,
+      "score": 4118,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.904,
+      "areaRatio": 0.617,
+      "danger": 0
+    },
+    {
+      "drop": 124,
+      "time": 88.87,
+      "score": 4158,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.886,
+      "areaRatio": 0.618,
+      "danger": 0
+    },
+    {
+      "drop": 125,
+      "time": 89.58,
+      "score": 4168,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.886,
+      "areaRatio": 0.633,
+      "danger": 0
+    },
+    {
+      "drop": 126,
+      "time": 90.3,
+      "score": 4208,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.886,
+      "areaRatio": 0.634,
+      "danger": 0
+    },
+    {
+      "drop": 127,
+      "time": 91.02,
+      "score": 4208,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.886,
+      "areaRatio": 0.639,
+      "danger": 0
+    },
+    {
+      "drop": 128,
+      "time": 91.73,
+      "score": 4218,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.887,
+      "areaRatio": 0.643,
+      "danger": 0
+    },
+    {
+      "drop": 129,
+      "time": 92.45,
+      "score": 4218,
+      "cats": 21,
+      "maxLevel": 7,
+      "heightRatio": 0.887,
+      "areaRatio": 0.648,
+      "danger": 0
+    },
+    {
+      "drop": 130,
+      "time": 93.17,
+      "score": 4252,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.887,
+      "areaRatio": 0.651,
+      "danger": 0
+    },
+    {
+      "drop": 131,
+      "time": 93.88,
+      "score": 4262,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.936,
+      "areaRatio": 0.655,
+      "danger": 0.033
+    },
+    {
+      "drop": 132,
+      "time": 95.5,
+      "score": 4342,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.879,
+      "areaRatio": 0.654,
+      "danger": 0
+    },
+    {
+      "drop": 133,
+      "time": 96.22,
+      "score": 4374,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.9,
+      "areaRatio": 0.657,
+      "danger": 0
+    },
+    {
+      "drop": 134,
+      "time": 96.93,
+      "score": 4394,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.873,
+      "areaRatio": 0.66,
+      "danger": 0
+    },
+    {
+      "drop": 135,
+      "time": 97.65,
+      "score": 4434,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.959,
+      "areaRatio": 0.673,
+      "danger": 0.067
+    },
+    {
+      "drop": 136,
+      "time": 98.37,
+      "score": 4514,
+      "cats": 19,
+      "maxLevel": 7,
+      "heightRatio": 0.881,
+      "areaRatio": 0.672,
+      "danger": 0.217
+    },
+    {
+      "drop": 137,
+      "time": 99.98,
+      "score": 4514,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.926,
+      "areaRatio": 0.677,
+      "danger": 0
+    },
+    {
+      "drop": 138,
+      "time": 100.7,
+      "score": 4524,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.926,
+      "areaRatio": 0.681,
+      "danger": 0
+    },
+    {
+      "drop": 139,
+      "time": 101.42,
+      "score": 4544,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.926,
+      "areaRatio": 0.684,
+      "danger": 0
+    },
+    {
+      "drop": 140,
+      "time": 102.13,
+      "score": 4554,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.926,
+      "areaRatio": 0.688,
+      "danger": 0
+    },
+    {
+      "drop": 141,
+      "time": 102.85,
+      "score": 4574,
+      "cats": 20,
+      "maxLevel": 7,
+      "heightRatio": 0.951,
+      "areaRatio": 0.696,
+      "danger": 0.083
+    },
+    {
+      "drop": 142,
+      "time": 103.57,
+      "score": 4766,
+      "cats": 18,
+      "maxLevel": 7,
+      "heightRatio": 0.961,
+      "areaRatio": 0.7,
+      "danger": 0.733
+    },
+    {
+      "drop": 143,
+      "time": 104.28,
+      "score": 5324,
+      "cats": 16,
+      "maxLevel": 7,
+      "heightRatio": 0.975,
+      "areaRatio": 0.672,
+      "danger": 0.117
+    },
+    {
+      "drop": 144,
+      "time": 104.3,
+      "score": 5964,
+      "cats": 16,
+      "maxLevel": 8,
+      "heightRatio": 0.976,
+      "areaRatio": 0.622,
+      "danger": 0.117
+    }
+  ],
+  "first": [
+    1,
+    1,
+    2,
+    1
+  ],
+  "attempts": 144,
+  "random": 818559208,
+  "state": "won",
+  "score": 5964,
+  "maxLevel": 8
+}

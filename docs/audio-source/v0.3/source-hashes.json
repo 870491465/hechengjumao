@@ -1,0 +1,74 @@
+[
+  {
+    "file": "bgm_cozy_loop.wav",
+    "sha256": "8ae7ad8435c355fb5b677633bb1742e8ec77f8efa5eb41231e0f7556aa4733fe"
+  },
+  {
+    "file": "box_shake.wav",
+    "sha256": "a9245756a2595ee0bca5a08387d81438d14de69938f961bea31e1530efb77c75"
+  },
+  {
+    "file": "cat_bump.wav",
+    "sha256": "718325bb99383267692b5be36eca681a3bb6f90a017d0fd60a1d7d0d4d71e958"
+  },
+  {
+    "file": "cat_purr.wav",
+    "sha256": "1a9da16e8a193dcf2259091c50a1f42fd11ef67e3b2e7f67f5d7820ae2aee516"
+  },
+  {
+    "file": "cat_release.wav",
+    "sha256": "44217c3e298267fa13845d7b12339f79a2dc907386b9ff9bbe990e327fee7485"
+  },
+  {
+    "file": "cat_unlock.wav",
+    "sha256": "b1f2e31b3318692c20cd0fd1936aa61bfad62da684be3e638a525fe4fe2d7d20"
+  },
+  {
+    "file": "chain_accent.wav",
+    "sha256": "9c14ff7dc2ba58c47471e59a52c6b9305f60c7740e082d056fd632fe9b40aa01"
+  },
+  {
+    "file": "danger_tick.wav",
+    "sha256": "c849e4116ef9c12615c6a3db2e10297484aa162f38b9555c4cd154d828625a8f"
+  },
+  {
+    "file": "game_lose.wav",
+    "sha256": "13a6d583ba6062aac3793b8a4ac26a302cf65561e5e19d7e8f2b5a39bbea3be0"
+  },
+  {
+    "file": "game_win.wav",
+    "sha256": "05e5bc6a76933789ed0d86c25097cc66eae4a744fbf7690d7e9977786ab5c62d"
+  },
+  {
+    "file": "land_heavy.wav",
+    "sha256": "891c7f4f82b96254e5984d797f9c9989c5257e03668e3cb5443e29ffa646d94f"
+  },
+  {
+    "file": "land_soft.wav",
+    "sha256": "00a259f58420c52938716a3c4153c3de256dbd8938b9abaf99d3823ee5d4cb27"
+  },
+  {
+    "file": "merge_large.wav",
+    "sha256": "dae430fed67bf755eccc0dfc1a0a3c2911aac457b797e7f6b8e1b1f2065c9068"
+  },
+  {
+    "file": "merge_medium.wav",
+    "sha256": "2f85aa334659ecff111c21f55c0c8311ee4be873c082d7559f9d6fdd9fdbb877"
+  },
+  {
+    "file": "merge_small.wav",
+    "sha256": "6410736731c38b172bbc652a4bfc049c5067996acf55724ff70a3992322a77b9"
+  },
+  {
+    "file": "revive_success.wav",
+    "sha256": "49e2ecaf912db1dddc18d3f15703433177c5223d5647867030a0dae8007b48e9"
+  },
+  {
+    "file": "ui_open.wav",
+    "sha256": "b0acbe043da2cee77d61dedcb86fd18bf83585d6640d7495b151ae22dbf3cecd"
+  },
+  {
+    "file": "ui_tap.wav",
+    "sha256": "9d0a09eedd6391570f5c4913767357741206ca4190ac578042c7446aed52fe4b"
+  }
+]

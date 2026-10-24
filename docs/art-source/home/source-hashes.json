@@ -1,0 +1,34 @@
+[
+  {
+    "file": "home-background.png",
+    "sha256": "56b831a7e47a54df319ef018645b75b1e3358a4384dea55715273f8c9f4ca223"
+  },
+  {
+    "file": "home-hero.png",
+    "sha256": "056f8c183a5e6b9b3c6fe3982a26c963039be9a6e1f14ee264af3c843441501e"
+  },
+  {
+    "file": "home-logo.png",
+    "sha256": "eaac0974166a1e9af8e41cce85be3e55a6e43cc81db9ce5c10d6b3b42bdd75d7"
+  },
+  {
+    "file": "home-button-start.png",
+    "sha256": "aeca70278437fe71b88e58f85831e6a46eab35e232eb2f8de37af41e584e48ce"
+  },
+  {
+    "file": "home-score-panel.png",
+    "sha256": "a092d0ba2134a827217059a5c5a779228d3ec7de04c02741ef9f61d420f4297e"
+  },
+  {
+    "file": "home-icon-sound.png",
+    "sha256": "b491dc29c8c83c56bea72a3be8e8c112b820d9c2ad6646447e55d49afb7b1ec0"
+  },
+  {
+    "file": "home-button-help.png",
+    "sha256": "3db5195efb96bf779aa187b1270f8a5ef6400a4da96a90585009e1cbc54969e4"
+  },
+  {
+    "file": "home-icon-settings.png",
+    "sha256": "e8afd0ddf4e2d5e291b3c9a0063e28cbccc1e84d34de94eb2cc1e8b9460665a4"
+  }
+]
