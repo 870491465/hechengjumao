@@ -1,0 +1,305 @@
+{
+  "canvas": [
+    512,
+    512
+  ],
+  "coordinates": "top-left origin; x right; y down; viewer left/right",
+  "bodyCenter": [
+    256,
+    272
+  ],
+  "referenceCollisionRadius": 176,
+  "collisionNote": "visual calibration reference only; keep original game collision radius unchanged",
+  "defaultOrder": [
+    "body",
+    "paw_left_back",
+    "paw_right_back",
+    "paw_left_front",
+    "paw_right_front",
+    "mouth_normal",
+    "eye_left_closed",
+    "eye_right_closed"
+  ],
+  "pivots": {
+    "paw_left_front": [
+      143,
+      262
+    ],
+    "paw_right_front": [
+      369,
+      262
+    ],
+    "paw_left_back": [
+      155,
+      343
+    ],
+    "paw_right_back": [
+      357,
+      343
+    ],
+    "eye_left_open": [
+      201,
+      187
+    ],
+    "eye_right_open": [
+      310,
+      187
+    ],
+    "eye_left_half": [
+      201,
+      187
+    ],
+    "eye_right_half": [
+      310,
+      187
+    ],
+    "eye_left_closed": [
+      201,
+      187
+    ],
+    "eye_right_closed": [
+      310,
+      187
+    ],
+    "mouth_normal": [
+      255,
+      202
+    ],
+    "body": [
+      256,
+      272
+    ]
+  },
+  "poses": {
+    "pose_01_wait": {
+      "scale": [
+        0.98,
+        1.015
+      ],
+      "front": {
+        "left": [
+          4,
+          -4,
+          -3
+        ],
+        "right": [
+          -4,
+          -4,
+          3
+        ]
+      },
+      "back": {
+        "left": [
+          4,
+          -5,
+          0
+        ],
+        "right": [
+          -4,
+          -5,
+          0
+        ]
+      },
+      "eye": "half"
+    },
+    "pose_02_fall": {
+      "scale": [
+        0.97,
+        1.045
+      ],
+      "front": {
+        "left": [
+          -4,
+          6,
+          5
+        ],
+        "right": [
+          4,
+          6,
+          -5
+        ]
+      },
+      "back": {
+        "left": [
+          2,
+          -1,
+          0
+        ],
+        "right": [
+          -2,
+          -1,
+          0
+        ]
+      },
+      "eye": "open"
+    },
+    "pose_03_contact": {
+      "scale": [
+        1.045,
+        0.955
+      ],
+      "front": {
+        "left": [
+          2,
+          2,
+          -2
+        ],
+        "right": [
+          -2,
+          2,
+          2
+        ]
+      },
+      "back": {
+        "left": [
+          2,
+          -1,
+          0
+        ],
+        "right": [
+          -2,
+          -1,
+          0
+        ]
+      },
+      "eye": "closed"
+    },
+    "pose_04_round": {
+      "scale": [
+        1,
+        1
+      ],
+      "front": {
+        "left": [
+          0,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0,
+          0
+        ]
+      },
+      "back": {
+        "left": [
+          0,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0,
+          0
+        ]
+      },
+      "eye": "closed"
+    }
+  },
+  "eyeStates": [
+    "open",
+    "half",
+    "closed"
+  ],
+  "status": "single-cat rig validation candidate; Cocos integration not tested",
+  "cocosPivotOffsets": {
+    "paw_left_front": [
+      -113,
+      10
+    ],
+    "paw_right_front": [
+      113,
+      10
+    ],
+    "paw_left_back": [
+      -101,
+      -71
+    ],
+    "paw_right_back": [
+      101,
+      -71
+    ],
+    "eye_left_open": [
+      -55,
+      85
+    ],
+    "eye_right_open": [
+      54,
+      85
+    ],
+    "eye_left_half": [
+      -55,
+      85
+    ],
+    "eye_right_half": [
+      54,
+      85
+    ],
+    "eye_left_closed": [
+      -55,
+      85
+    ],
+    "eye_right_closed": [
+      54,
+      85
+    ],
+    "mouth_normal": [
+      -1,
+      70
+    ],
+    "body": [
+      0,
+      0
+    ]
+  },
+  "cocosSpriteOffsetsAtPivot": {
+    "paw_left_front": [
+      113,
+      6
+    ],
+    "paw_right_front": [
+      -113,
+      6
+    ],
+    "paw_left_back": [
+      101,
+      87
+    ],
+    "paw_right_back": [
+      -101,
+      87
+    ],
+    "eye_left_open": [
+      55,
+      -69
+    ],
+    "eye_right_open": [
+      -54,
+      -69
+    ],
+    "eye_left_half": [
+      55,
+      -69
+    ],
+    "eye_right_half": [
+      -54,
+      -69
+    ],
+    "eye_left_closed": [
+      55,
+      -69
+    ],
+    "eye_right_closed": [
+      -54,
+      -69
+    ],
+    "mouth_normal": [
+      1,
+      -54
+    ],
+    "body": [
+      0,
+      16
+    ]
+  }
+}

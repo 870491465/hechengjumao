@@ -12,12 +12,15 @@ import { ShakeController } from './ShakeController';
 import { HomeRecord, HomeView } from './HomeView';
 import { WinView } from './WinView';
 import { GameAudio } from './GameAudio';
+import { LevelOneVisual } from './LevelOneVisual';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameController')
 export class GameController extends Component {
     @property({ tooltip: '显示真实物理圆心、圆形碰撞轮廓和箱内边界（默认关闭）' })
     showCollisionOutlines = false;
+    @property({ tooltip: '开发验证：1级猫分层动画；发布版本默认启用。也可用 ?catAnim=0 对照旧版' })
+    enableLevelOneAnimation = true;
     session = new Session();
     cats = new Map<number, CatEntity>();
     shake = new ShakeController();
@@ -53,7 +56,11 @@ export class GameController extends Component {
         this.loadingNode = loading.node;
         this.audio = new GameAudio(this.node); this.audio.setMuted(this.homeRecord.muted);
         this.audio.setMusicMuted(this.homeRecord.musicMuted);
-        await Promise.all([ArtAssets.load(),this.audio.load()]);
+        if(DEBUG){
+            const query=typeof window!=='undefined'?new URLSearchParams(window.location.search):null;
+            LevelOneVisual.enabled=query?.has('catAnim')?query.get('catAnim')!=='0':this.enableLevelOneAnimation;
+        }
+        await Promise.all([ArtAssets.load(),LevelOneVisual.load(),this.audio.load()]);
         if (this.shuttingDown || !isValid(this, true) || !isValid(this.node, true)) return;
         if (isValid(this.loadingNode, true)) this.loadingNode.destroy();
         this.loadingNode = null;
@@ -69,7 +76,10 @@ export class GameController extends Component {
         this.ui.setVisible(false);
         this.audio.home();
         // Dev-only test seam. No UI cheats or test hooks in release builds.
-        if (DEBUG && typeof window !== 'undefined') (window as any).__catGame = this;
+        if (DEBUG && typeof window !== 'undefined') {
+            (window as any).__catGame = this;
+            if(new URLSearchParams(window.location.search).get('catTest')==='1')this.singleCatTest();
+        }
     }
     private createWalls() {
         const t = CONFIG.wallThickness;
@@ -115,6 +125,7 @@ export class GameController extends Component {
             const nx = n.x * sign, ny = n.y * sign;
             const closing = ((self.incomingX - (peer?.incomingX || 0)) * nx
                 + (self.incomingY - (peer?.incomingY || 0)) * ny) * CONFIG.pixelsPerMetre;
+            self.contactVisual(other,other.node.name==='Floor'||!!peer&&ny<-.35&&peer.y<self.y,closing);
             const animated = self.impact(closing, nx, ny, this.session.time);
             // A merge contact owns the feedback. Defer other impacts until the step's merges commit.
             if (animated && !(peer && peer.level === self.level && self.level < 8)) {
@@ -131,6 +142,7 @@ export class GameController extends Component {
         } else if (other.node.name === 'Floor') self.touched = true;
     }
     private contactEnd(self: CatEntity, other: Collider2D) {
+        self.endContactVisual(other);
         const peer = this.colliders.get(other); if (peer) this.mergeSystem.end(self.id, peer.id);
     }
     private remove(cat: CatEntity) {
@@ -164,6 +176,7 @@ export class GameController extends Component {
         }
         const visualDt=s.state==='playing'||s.state==='won'?Math.min(dt,.1):0;
         this.ui.effects.tick(visualDt);
+        this.ui.animatePreviews(s.state==='playing'?visualDt:0);
         for (const cat of this.cats.values()) cat.animate(s.time, this.shake.visualX,visualDt);
         this.ui.refresh(s, this.shake);
         this.ui.setCollisionOutlines(this.showCollisionOutlines);
@@ -189,6 +202,7 @@ export class GameController extends Component {
         p.physicsWorld.syncSceneToPhysics(); p.step(dt); p.physicsWorld.syncPhysicsToScene();
         for (const cat of this.cats.values()) { cat.constrainToBox(); cat.limitVelocity(); }
         this.commitMerges();
+        for(const cat of this.cats.values())cat.updateVisualState(dt,this.shake.active);
         if(s.state==='playing')for(const hit of Array.from(this.impacts.values()).sort((a,b)=>b.speed-a.speed)) {
             if(hit.ids.every(id=>this.cats.has(id))) {
                 if(hit.kind==='land')this.audio.land(hit.level,hit.speed,hit.ids);else this.audio.bump(hit.speed,hit.ids);
@@ -215,6 +229,7 @@ export class GameController extends Component {
                 const touched = a.touched || b.touched;
                 const va = a.body.linearVelocity, vb = b.body.linearVelocity;
                 const level = a.level + 1;
+                a.stopOwnAnimation();b.stopOwnAnimation();
                 this.ui.effects.gather([a,b],position.x,position.y);
                 this.remove(a); this.remove(b);
                 const product = this.spawn(level, position.x, position.y);
@@ -235,6 +250,17 @@ export class GameController extends Component {
         this.session.state = 'paused'; this.accumulator = 0; this.controls.cancel();
         this.audio.suspend(); this.impacts.clear();
         this.ui.modal('休息一下', '物理与所有局内计时已暂停', [['继续装猫', () => this.resume()], ['重新开始', () => this.restart()], ['返回首页', () => this.returnHome()]]);
+    }
+    /** Developer-only console/URL entry, never a release button. Uses real drop/physics. */
+    singleCatTest(){
+        if(!DEBUG)return;
+        this.restart();this.session.current=1;this.session.next=1;this.ui.refresh(this.session,this.shake);
+    }
+    setLevelOneAnimation(enabled:boolean){
+        if(!DEBUG)return;
+        LevelOneVisual.enabled=enabled;this.enableLevelOneAnimation=enabled;
+        for(const cat of this.cats.values())if(cat.level===1)cat.rebuildVisual();
+        this.ui.resetCatPreviews();this.ui.refresh(this.session,this.shake);
     }
     resume() {
         if (this.hidden || this.session.state !== 'paused') return;
@@ -266,6 +292,7 @@ export class GameController extends Component {
         this.wonNewRecord = result === 'won' && this.session.score > this.homeRecord.best;
         this.homeRecord.record(this.session.score);
         this.controls.cancel(); this.shake.stop(); this.accumulator = 0;
+        for(const cat of this.cats.values())cat.stopOwnAnimation();
         this.audio.result(result==='won');
         if (result === 'won') {
             this.celebration = 0;

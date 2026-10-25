@@ -1,0 +1,170 @@
+{
+  "body.png": {
+    "sha256": "4083628bad0754ec21d8f9b18a07e0aa2521d65089915c6b992a331dd5c2eff6",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      0,
+      0,
+      501,
+      512
+    ]
+  },
+  "eye_left_closed.png": {
+    "sha256": "8e5d57ba34fb9c5d70020d851de30dfb01f360ec0ebd7493afc5a95b21f4fc70",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      178,
+      181,
+      225,
+      193
+    ]
+  },
+  "eye_left_half.png": {
+    "sha256": "db1864187c1e644c43d77f1ebd57cc572e18e627dd6b4eea291535580ee0edcb",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      187,
+      184,
+      215,
+      191
+    ]
+  },
+  "eye_left_open.png": {
+    "sha256": "9e117b3f10f2b6cbb73affa817b3fa4719376f679ef83591db754a73aec934e0",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      187,
+      179,
+      215,
+      195
+    ]
+  },
+  "eye_right_closed.png": {
+    "sha256": "f72bb3da78c486ed32c9d90173edf4b3f9f719068620f5e9af1cfe37a16bd272",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      287,
+      181,
+      334,
+      193
+    ]
+  },
+  "eye_right_half.png": {
+    "sha256": "1b860b798108a252b496487a05c8ba1e46d6e5ea4e647cc2fd6d632b7b8ec122",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      296,
+      184,
+      324,
+      191
+    ]
+  },
+  "eye_right_open.png": {
+    "sha256": "14e91136302622b5e2a1b24f36b0b84b6a858b81aa233463dfd981abcbed3d1d",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      296,
+      179,
+      324,
+      195
+    ]
+  },
+  "mouth_normal.png": {
+    "sha256": "5b128a3746c7c8b4e1cac61d882b5babbbc8435a8b4de89dfcc52f8400dd957b",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      225,
+      193,
+      284,
+      211
+    ]
+  },
+  "paw_left_back.png": {
+    "sha256": "1a1e8ce2656a74ae0f5d9b470b4b8d4a79758ec80ccfc22cea35fccb0bb3c35f",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      121,
+      319,
+      217,
+      419
+    ]
+  },
+  "paw_left_front.png": {
+    "sha256": "45dd68d52f2c51c9b4fc2338d59705960dfa3e2b2b76637b64aced2b03bdd8ed",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      123,
+      244,
+      218,
+      325
+    ]
+  },
+  "paw_right_back.png": {
+    "sha256": "d87f8320c981af6663dab68f5124df14004aa2f27b135b792365440a9022ba36",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      296,
+      319,
+      392,
+      419
+    ]
+  },
+  "paw_right_front.png": {
+    "sha256": "528bb610de74eafab9716cd8130e774bfbf98956d40ba9eb9df0c3b4e954c4fa",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "alphaBounds": [
+      295,
+      244,
+      390,
+      325
+    ]
+  }
+}

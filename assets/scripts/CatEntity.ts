@@ -2,6 +2,8 @@ import { CircleCollider2D, Collider2D, Contact2DType, ERigidBody2DType, IPhysics
 import { CONFIG, radius } from './GameConfig';
 import { ball, uiNode } from './GameView';
 import { ART, ArtAssets } from './ArtAssets';
+import { LevelOneVisual } from './LevelOneVisual';
+import { LEVEL_ONE } from './LevelOneConfig';
 
 export class CatEntity {
     readonly node: Node; readonly body: RigidBody2D; readonly collider: CircleCollider2D; readonly art: Node;
@@ -12,6 +14,8 @@ export class CatEntity {
     private mergeVisualAt = -Infinity;
     private mergeElapsed = -Infinity;
     private disposed = false;
+    rig?: LevelOneVisual;
+    private supportContacts = new Set<Collider2D>();
     get x() { return this.node.position.x; }
     get y() { return this.node.position.y; }
     get r() { return radius(this.level); }
@@ -27,7 +31,38 @@ export class CatEntity {
         this.collider.density = CONFIG.density; this.collider.friction = CONFIG.friction; this.collider.restitution = CONFIG.restitution;
         this.collider.on(Contact2DType.BEGIN_CONTACT, (_: Collider2D, other: Collider2D, contact: IPhysics2DContact) => onBegin(this, other, contact));
         this.collider.on(Contact2DType.END_CONTACT, (_: Collider2D, other: Collider2D) => onEnd(this, other));
-        this.art = ball(this.node, level, this.r); this.node.active = true;
+        this.art = ball(this.node, level, this.r);this.rig=LevelOneVisual.of(this.art);this.rig?.fall(); this.node.active = true;
+    }
+    contactVisual(other:Collider2D, supported:boolean, closingSpeed:number){
+        if(!this.rig)return;
+        // Manual Box2D sync can refresh resting contacts. Numerical contact chatter
+        // is not a new hit and must not reset the stable/quiet clock every step.
+        if(closingSpeed>=LEVEL_ONE.quietContactSpeed)this.rig.touch();
+        this.supportContacts.add(other);
+        if(supported)this.rig.contact(this.node.angle);
+    }
+    endContactVisual(other:Collider2D){this.supportContacts.delete(other);}
+    updateVisualState(dt:number,shaking:boolean){
+        if(!this.rig)return;
+        let supported=false;
+        for(const other of this.supportContacts){
+            if(!isValid(other,true)||!other.node.activeInHierarchy){this.supportContacts.delete(other);continue;}
+            if(other.node.name==='Floor'){supported=true;break;}
+            if(other instanceof CircleCollider2D){
+                const p=other.node.position,dx=this.x-p.x,dy=this.y-p.y;
+                if(dy>.35*Math.hypot(dx,dy)){supported=true;break;}
+            }
+        }
+        this.rig.motion(dt,this.body.linearVelocity.length()*CONFIG.pixelsPerMetre,this.body.angularVelocity,supported,shaking);
+    }
+    stopOwnAnimation(){this.rig?.stop();}
+    rebuildVisual(){
+        this.rig?.dispose();this.rig=undefined;
+        for(const n of this.art.children.slice()){n.removeFromParent();n.destroy();}
+        if(ArtAssets.cat(this.art,this.level,this.r)){
+            this.rig=LevelOneVisual.of(this.art);
+            if(this.rig){this.rig.fall();if(this.touched){this.rig.contact(this.node.angle);this.rig.advance(.25,this.node.angle);}}
+        }
     }
     captureMotion() { const v = this.body.linearVelocity; this.incomingX = v.x; this.incomingY = v.y; }
     impact(speed: number, nx: number, ny: number, now: number, force = false) {
@@ -43,6 +78,7 @@ export class CatEntity {
         if (this.jellyAngle > 90) this.jellyAngle -= 180;
         const length = Math.hypot(nx, ny) || 1;
         this.jellyNormalX = nx / length; this.jellyNormalY = ny / length;
+        this.rig?.impact();
         return true;
     }
     pop(now: number) {
@@ -50,6 +86,19 @@ export class CatEntity {
         (this.art.getComponent(UIOpacity)||this.art.addComponent(UIOpacity)).opacity=0;
     }
     animate(now: number, boxOffset = 0, visualDt = 0) {
+        if(this.rig){
+            this.rig.advance(visualDt,this.node.angle);
+            const {sx,sy,angle}=this.rig.pose;
+            this.art.setScale(sx,sy,1);this.art.angle=angle-this.node.angle;
+            const theta=angle*Math.PI/180;
+            const ex=this.r*Math.hypot(sx*Math.cos(theta),sy*Math.sin(theta));
+            const ey=this.r*Math.hypot(sx*Math.sin(theta),sy*Math.cos(theta));
+            const x=Math.max(-CONFIG.width/2+Math.max(0,boxOffset)+ex,Math.min(CONFIG.width/2+Math.min(0,boxOffset)-ex,this.x));
+            const planted=this.y-this.r<=CONFIG.bottom+1?Math.min(0,sy-1)*this.r:0;
+            const y=Math.max(CONFIG.bottom+ey,this.y+planted);
+            const a=this.node.angle*Math.PI/180,dx=x-this.x,dy=y-this.y;
+            this.art.setPosition(dx*Math.cos(a)+dy*Math.sin(a),-dx*Math.sin(a)+dy*Math.cos(a));return;
+        }
         this.mergeElapsed+=visualDt;
         const age = Math.max(0, now - this.jellyAt);
         const strength = ArtAssets.hasCat(this.level) ? Math.min(this.jellyStrength, ART.catMaxSquash) : this.jellyStrength;
@@ -111,6 +160,7 @@ export class CatEntity {
     dispose() {
         if (this.disposed) return;
         this.disposed = true; this.locked = true;
+        this.rig?.dispose();this.rig=undefined;this.supportContacts.clear();
         if (isValid(this.collider, true)) {
             this.collider.off(Contact2DType.BEGIN_CONTACT); this.collider.off(Contact2DType.END_CONTACT);
         }

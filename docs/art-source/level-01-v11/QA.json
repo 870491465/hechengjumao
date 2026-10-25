@@ -1,0 +1,13 @@
+{
+  "sprite_count": 12,
+  "pose_count": 4,
+  "all_formal_png_512_rgba": true,
+  "body_alpha_identical_to_original": true,
+  "original_eye_mouth_regions_have_no_remaining_dark_features": true,
+  "eye_state_visible_bbox_center_drift_max_px": 0.5,
+  "ora_reassembly_max_channel_difference": 1,
+  "visual_review": "body-only, assembled, open-eye fall, pose sheet, pivot guide",
+  "cocos_validation": "NOT RUN",
+  "paw_seam_limit": "designed for <=6px / <=6deg local motion; actual engine display pending",
+  "classification": "single-cat validation candidate, not final engine-accepted production rig"
+}

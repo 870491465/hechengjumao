@@ -22,3 +22,5 @@ Cocos Creator **3.8.8**，Box2D 2D。打开 `assets/scenes/CatBox.scene`，点�
 - [加入4级随机投放的概率与验证](docs/4级随机投放调整.md)
 
 规则与业务类型检查：`npm run check`。
+
+V1.1 仅1级猫分层动画：[素材映射、测试入口、调参与验证](docs/V1.1单猫动画验证.md)。本地单猫试玩：`http://localhost:8080/?catTest=1&catAnim=1`；对照旧视觉改为 `catAnim=0`。

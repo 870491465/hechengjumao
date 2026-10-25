@@ -1,5 +1,6 @@
 import { director, gfx, ImageAsset, Layers, Node, Rect, resources, Size, Sprite, SpriteFrame, Texture2D, UITransform, Vec2 } from 'cc';
 import { CONFIG, TOP } from './GameConfig';
+import { LevelOneVisual } from './LevelOneVisual';
 
 type Crop = [number, number, number, number];
 interface ArtEntry { file: string; size: [number, number]; crop: Crop }
@@ -18,7 +19,7 @@ export const ART = {
         winBackground: { file: 'game-background', size: [941,1672], crop: [0,0,941,1672] },
         homeBackground: { file: 'home-background', size: [941,1672], crop: [0,0,941,1672] },
         homeHero: { file: 'home-hero', size: [1536,1024], crop: [36,125,1463,846] },
-        homeLogo: { file: 'home-logo', size: [2172,724], crop: [175,33,1902,669] },
+        homeLogo: { file: 'game_logo_v11', size: [2172,724], crop: [60,65,2088,580] },
         homeStart: { file: 'home-button-start', size: [2172,724], crop: [162,140,1848,432] },
         homeScore: { file: 'home-score-panel', size: [2142,734], crop: [119,207,1907,319] },
         homeSound: { file: 'home-icon-sound', size: [1254,1254], crop: [100,107,1054,1043] },
@@ -37,7 +38,7 @@ export const ART = {
         back: { file: 'box_back', size: [1079, 1457], crop: [37, 106, 1005, 1225] },
         rim: { file: 'box_front_rim', size: [1484, 1060], crop: [29, 480, 1428, 119] },
         shake: { file: 'button_shake_blank', size: [2167, 725], crop: [108, 74, 1947, 568] },
-        logo: { file: 'game_logo', size: [2172, 724], crop: [171, 27, 1912, 682] },
+        logo: { file: 'game_logo_v11', size: [2172,724], crop: [60,65,2088,580] },
     } as Record<string, ArtEntry>,
     // Least-squares fit to alpha>180 side/bottom contour, y>=400; excludes ears and canvas padding.
     cats: {
@@ -96,6 +97,7 @@ export class ArtAssets {
         sprite.sizeMode = Sprite.SizeMode.CUSTOM; sprite.spriteFrame = frame; return n;
     }
     static cat(parent: Node, level: number, r: number): boolean {
+        if(level===1&&LevelOneVisual.create(parent,r))return true;
         const body = ART.cats[level]; if (!body || !this.hasCat(level)) return false;
         const [x, y, w, h] = ART.entries[body.key].crop, scale = r / body.radius;
         // Picture rotates around the BODY origin; the cropped bitmap centre can differ from that origin.

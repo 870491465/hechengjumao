@@ -1,6 +1,8 @@
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
-const url = process.env.CATBOX_URL || 'http://localhost:8080/';
+// This suite calibrates V1.0 bitmap contours. V1.1 layered assembly has its own suite.
+const artUrl = new URL(process.env.CATBOX_URL || 'http://localhost:8080/');artUrl.searchParams.set('catAnim','0');
+const url = artUrl.href;
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox']});
   const page=await browser.newPage({viewport:{width:720,height:1280},hasTouch:true});

@@ -1,0 +1,226 @@
+[
+  {
+    "file": "sprites/body.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      72,
+      87,
+      440,
+      439
+    ]
+  },
+  {
+    "file": "sprites/eye_left_closed.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      178,
+      181,
+      225,
+      193
+    ]
+  },
+  {
+    "file": "sprites/eye_left_half.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      187,
+      184,
+      215,
+      191
+    ]
+  },
+  {
+    "file": "sprites/eye_left_open.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      187,
+      179,
+      215,
+      195
+    ]
+  },
+  {
+    "file": "sprites/eye_right_closed.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      287,
+      181,
+      334,
+      193
+    ]
+  },
+  {
+    "file": "sprites/eye_right_half.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      296,
+      184,
+      324,
+      191
+    ]
+  },
+  {
+    "file": "sprites/eye_right_open.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      296,
+      179,
+      324,
+      195
+    ]
+  },
+  {
+    "file": "sprites/mouth_normal.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      225,
+      193,
+      284,
+      211
+    ]
+  },
+  {
+    "file": "sprites/paw_left_back.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      123,
+      321,
+      215,
+      417
+    ]
+  },
+  {
+    "file": "sprites/paw_left_front.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      125,
+      245,
+      216,
+      323
+    ]
+  },
+  {
+    "file": "sprites/paw_right_back.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      298,
+      321,
+      390,
+      417
+    ]
+  },
+  {
+    "file": "sprites/paw_right_front.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      297,
+      245,
+      388,
+      323
+    ]
+  },
+  {
+    "file": "pose_references/pose_01_wait.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      75,
+      84,
+      436,
+      442
+    ]
+  },
+  {
+    "file": "pose_references/pose_02_fall.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      77,
+      78,
+      435,
+      447
+    ]
+  },
+  {
+    "file": "pose_references/pose_03_contact.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      63,
+      95,
+      448,
+      432
+    ]
+  },
+  {
+    "file": "pose_references/pose_04_round.png",
+    "size": [
+      512,
+      512
+    ],
+    "format": "RGBA PNG",
+    "visibleBoundsXYXY": [
+      72,
+      87,
+      440,
+      439
+    ]
+  }
+]

@@ -14,7 +14,9 @@
     "test:full-round": "node tools/full-round-check.cjs",
     "test:fail": "node tools/fail-check.cjs",
     "test:drop-four": "node tools/drop-four-check.cjs",
-    "test:contact-skin": "node tools/contact-skin-check.cjs"
+    "test:contact-skin": "node tools/contact-skin-check.cjs",
+    "test:level-one": "node tools/level-one-animation-check.cjs",
+    "test:level-one-stretch": "node tools/level-one-stretch-check.cjs"
   },
   "creator": {
     "version": "3.8.8"

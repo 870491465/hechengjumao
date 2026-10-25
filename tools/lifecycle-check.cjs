@@ -5,6 +5,15 @@ const url = process.env.CATBOX_URL || 'http://localhost:8080/';
   const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox']});
   const page=await browser.newPage({viewport:{width:720,height:1280}});
   const errors=[];
+  if(process.env.CATBOX_LIFECYCLE_TRACE==='1'){
+    await page.addInitScript(()=>{
+      const original=console.error;let stacks=0;
+      console.error=(...args)=>{if(args.some(a=>String(a).includes('destroy'))&&stacks++<2)console.warn(new Error('Destroy trace').stack);original(...args);};
+    });
+    page.on('console',m=>console.log('BROWSER',m.type(),m.text()));
+    page.on('framenavigated',f=>console.log('NAVIGATION',f.url()));
+    page.on('crash',()=>console.log('PAGE CRASH'));
+  }
   page.on('pageerror',e=>errors.push(e.stack));
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
   try{
@@ -12,7 +21,7 @@ const url = process.env.CATBOX_URL || 'http://localhost:8080/';
     const result=await page.evaluate(async()=>{
       const cc=await System.import('cc');
       const frames=async(n=3)=>{for(let i=0;i<n;i++)await new Promise(requestAnimationFrame);};
-      const checks=[],ok=(name,value)=>{if(!value)throw Error(name);checks.push(name);};
+      const checks=[],ok=(name,value)=>{if(!value)throw Error(name);checks.push(name);console.log('LIFECYCLE',name);};
       const g=window.__catGame;g.enabled=false;g.restart();g.drop(0);
       const controls=g.controls,input=g.ui.inputArea,cat=[...g.cats.values()][0],map=g.cats;
       input.destroy();await frames();

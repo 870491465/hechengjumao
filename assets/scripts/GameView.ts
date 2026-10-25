@@ -5,6 +5,7 @@ import { ShakeController } from './ShakeController';
 import { ART, ArtAssets } from './ArtAssets';
 import { MergeEffects } from './MergeEffects';
 import { UiSound } from './AudioConfig';
+import { LevelOneVisual } from './LevelOneVisual';
 
 export function uiNode(name: string, parent: Node, x = 0, y = 0, w = 1, h = 1): Node {
     const n = new Node(name); n.layer = Layers.Enum.UI_2D; n.setParent(parent); n.setPosition(x, y);
@@ -85,7 +86,7 @@ export class GameView {
         this.aimGraphics = uiNode('AimLine',this.hud).addComponent(Graphics);
         const logo = ART.entries.logo;
         if (!ArtAssets.sprite(this.hud,'logo',176,176*logo.crop[3]/logo.crop[2],-239,608)) {
-            outlined(text(this.hud,'猫箱挤挤',-204,609,45,280,60),4);
+            outlined(text(this.hud,'合成橘猫',-204,609,45,280,60),4);
         }
         const sc = card(this.hud,'ScoreCard',-203,522,248,104);
         text(sc,'本局得分',0,29,22,220,30).isBold = true;
@@ -149,6 +150,7 @@ export class GameView {
     showGuide(x: number, level: number) {
         this.aimX = clampX(x, radius(level));
         if (!this.guideBall || this.guideBall.name !== String(level)) {
+            if(this.guideBall)LevelOneVisual.of(this.guideBall)?.dispose();
             this.guide.removeAllChildren(); this.guideBall?.destroy();
             this.guideBall = ball(this.guide, level, CONFIG.width * CONFIG.radiusRatios[level]);
             this.guideBall.name = String(level); this.guideBall.addComponent(UIOpacity).opacity = 220;
@@ -157,6 +159,22 @@ export class GameView {
         const world = this.cats.getComponent(UITransform)!.convertToWorldSpaceAR(new Vec3(this.aimX, SPAWN_Y, 0));
         const local = this.root.getComponent(UITransform)!.convertToNodeSpaceAR(world);
         this.guide.setPosition(local); this.guide.active = true;
+    }
+    animatePreviews(dt:number){
+        if(this.guideBall)LevelOneVisual.of(this.guideBall)?.preview(dt);
+        for(const p of this.preview.children)for(const art of p.children)LevelOneVisual.of(art)?.preview(dt);
+    }
+    resetCatPreviews(){
+        if(this.guideBall){
+            LevelOneVisual.of(this.guideBall)?.dispose();
+            if(isValid(this.guideBall,true)){this.guideBall.removeFromParent();this.guideBall.destroy();}
+            this.guideBall=null;
+        }
+        this.previewKey='';
+        if(isValid(this.preview,true))for(const p of this.preview.children.slice()){
+            for(const art of p.children)LevelOneVisual.of(art)?.dispose();
+            p.removeFromParent();p.destroy();
+        }
     }
     message(value: string, now: number) { this.hint.string = value; this.hintUntil = now + 2; }
     refresh(s: Session, shake: ShakeController) {
@@ -172,7 +190,7 @@ export class GameView {
         this.guide.active = playing; this.waitingLabel.node.active = playing;
         const key = `${s.current}:${s.next}`;
         if (key !== this.previewKey) {
-            for (const n of this.preview.children.slice()) { n.removeFromParent(); n.destroy(); }
+            for (const n of this.preview.children.slice()) { for(const art of n.children)LevelOneVisual.of(art)?.dispose();n.removeFromParent(); n.destroy(); }
             // The waiting cat is the current preview, matching the actual spawn size and position.
             const next = uiNode('Next', this.preview, 257, 470); ball(next, s.next, 38);
             this.previewKey = key;
@@ -237,8 +255,12 @@ export class GameView {
         }
         g.stroke();
     }
-    reset() { this.effects.clear(); this.hintUntil = 0; this.aimX = 0; this.guide.active = false; this.box.setPosition(0, 0); this.front.setPosition(0, 0); this.closeModal(); }
+    reset() { this.resetCatPreviews();this.effects.clear(); this.hintUntil = 0; this.aimX = 0; this.guide.active = false; this.box.setPosition(0, 0); this.front.setPosition(0, 0); this.closeModal(); }
     dispose() {
+        // Scene teardown may already be traversing this hierarchy: stop controllers,
+        // but leave child removal to the owned roots rather than mutating its traversal.
+        if(this.guideBall)LevelOneVisual.of(this.guideBall)?.dispose();this.guideBall=null;
+        if(isValid(this.preview,true))for(const p of this.preview.children)for(const art of p.children)LevelOneVisual.of(art)?.dispose();
         this.effects.dispose();
         const nodes = this.ownedNodes; this.ownedNodes = [];
         for (const node of nodes) if (isValid(node, true)) node.destroy();
