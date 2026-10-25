@@ -22,3 +22,27 @@ node_modules/
 # WebStorm
 #//////////////////////////
 .idea/
+
+# Local credentials and platform signing material
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+.netrc
+.pypirc
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.mobileprovision
+id_rsa
+id_ed25519
+credentials*.json
+service-account*.json
+secrets/
+project.private.config.json
+*.log
